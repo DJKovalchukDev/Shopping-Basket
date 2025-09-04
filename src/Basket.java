@@ -22,18 +22,18 @@ public class Basket {
     }
 
     public void add(String name, int price) {
-        add(name,price,1);
+        add(name, price, 1);
     }
 
     public void add(String name, int price, int count) {
-        if(contains(name)) {
+        if (contains(name)) {
             return;
         }
-        if(totalPrice + count * price >= limit) {
+        if (totalPrice + count * price >= limit) {
             return;
         }
         items = items + "\n" + name + " - " + count + " шт. / pcs. - " + price;
-        totalPrice = totalPrice + count*price;
+        totalPrice = totalPrice + count * price;
     }
 
     public void clear() {
@@ -51,7 +51,7 @@ public class Basket {
 
     public void print(String title) {
         System.out.println(title);
-        if(items.isEmpty()) {
+        if (items.isEmpty()) {
             System.out.println("Корзина пуста / Basket is empty");
         } else {
             System.out.println(items);

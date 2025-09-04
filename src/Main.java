@@ -9,13 +9,12 @@ public class Main {
         petiaBasket.add("Гвозди / Nails", 50);
         petiaBasket.add("Молоток / Hammer", 200);
 
-        Basket mashaBasket = new Basket("Стол / Table",5000);
+        Basket mashaBasket = new Basket("Стол / Table", 5000);
         mashaBasket.add("Стул / Chair", 1000);
 
 
         vasiaBasket.print("\nКорзина Васи / Vasia’s basket: ");
         petiaBasket.print("\nКорзина Пети / Petia’s basket: ");
         mashaBasket.print("\nКорзина Маши / Masha’s basket: ");
-
     }
 }
